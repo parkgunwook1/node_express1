@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Navigator</title>
+<script>
+let output ='';
+output +='appCodeName' + navigator.appCodeName + '\n';
+output +='appName' + navigator.appName + '\n';
+output +='appVersion' + navigator.appVersion + '\n';
+output +='platform' + navigator.platform + '\n';
+output +='userAgent' + navigator.userAgent;
+alert(output);
+if(navigator.userAgent.toLowerCase().indexOf('iphone')>=0
+|| navigator.userAgent.toLowerCase().indexOf('ipad')>=0
+|| navigator.userAgent.toLowerCase().indexOf('ipod')>=0
+|| navigator.userAgent.toLowerCase().indexOf('android')>=0){
+alert('모바일 웹 브라우저입니다.');
+} else {
+alert('데스크톱 웹 브라우저입니다.');
+}
+</script>
+</head>
+<body>
+</body>
+</html>

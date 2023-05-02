@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JqUERY Basic</title>
+        <script scr="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery/min.js"></script>
+        <script>
+            $(document).ready(function () {
+
+                const $headers = $('h1');
+
+                for(let i =0; i < $headers.length; i++) {
+                    if (i % 2 == 1) {
+                        const domElement = $headers.get(i);
+
+                        $(domElement).css('backgroundColor', 'red');
+                    }
+                }
+            });
+        </script>
+    </head>
+
+    <body>
+        <h1>HeaderA</h1>
+        <h1>HeaderB</h1>
+        <h1>HeaderC</h1>
+        <h1>HeaderD</h1>
+    </body>
+</html>
